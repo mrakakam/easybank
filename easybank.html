@@ -3,57 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/easybank.css">
     <title>Easy Bank</title>
 </head>
 <body>
     <section>
         <!-- navigation bar -->
-        <nav>
+        <nav class="nav">
             <img src="/resources/images/logo.svg" alt="easy bank logo">
-            <ul>
+            <ul class="list">
                 <li>Home</li>
                 <li>About</li>
                 <li>Contact</li>
                 <li>Blog</li>
                 <li>Careers</li>
             </ul>
-            <button>Request Invite</button>
+            <button id="request-invite">Request Invite</button>
         </nav>
         <!-- first section -->
-         <section>
-                <div>
-                     <h1>   Next Generation <br>
+         <section id="section-one">
+                <div class="sect-one-div-1">
+                     <h1 class="h1-helper">   Next Generation <br>
                             digital banking
                      </h1>
 
-                    <p>
+                    <p class="p-helper">
                         Take your financial life online.  Your Easybank account <br>
                         will be a one-stop-shop for spending, saving, <br>
                         budgeting, investing and much more.
                      </p>
-                    <button>Request Invite</button>
+                    <button id="request-invite">Request Invite</button>
                 </div>
-                <div>
-                     <img src="/resources/images/image-mockups.png" alt="">
+                <div class="sect-one-div-2">
+                     <img class="wrapper"  src="/resources/images/image-mockups.png" alt="">
                  </div>
          </section>
 
                 <!-- second section -->
 
-         <section>
-                 <div>
-                    <h1>Why choose Easybank?</h1>
-                    <p>
+         <section id="section-two">
+                 <div class="sect-two-div-1">
+                    <h1 class="h1-helper">Why choose Easybank?</h1>
+                    <p class="p-helper">
                         We leverage Open  Banking to turn your bank account into your financial hub. <br>
                         Control your finances like never before.
                     </p>
                 </div>
-                <div>
+                <div class="sect-two-div-2-helpers">
                     <img src="/resources/images/icon-online.svg" alt="">
 
                     <div>
                         <h3>Online Banking</h3>
-                        <p>
+                        <p class="p-helper">
                             Our modern web and mobile <br>
                             applications allow you to keep <br>
                             track of your finances wherever you <br>
@@ -62,11 +63,11 @@
                         </p>
                     </div>
                 </div>
-                <div>
+                <div class="sect-two-div-2-helpers">
                     <img src="/resources/images/icon-budgeting.svg" alt="">
                     <div>
                         <h3>Simple Budgeting</h3>
-                        <p>
+                        <p class="p-helper">
                             See exactly where your money  <br>
                             goes each month. Receive  <br>
                             notifications when you're close to <br>
@@ -74,11 +75,11 @@
                         </p>
                     </div>
                 </div>
-                <div>
+                <div class="sect-two-div-2-helpers">
                     <img src="/resources/images/icon-onboarding.svg" alt="">
                     <div>
                         <h3>Fast Onboarding</h3>
-                        <p>
+                        <p class="p-helper">
                             We don't do branches. Open your <br>
                             account in minutes online and start <br>
                             taking control of your finances <br>
@@ -86,11 +87,11 @@
                         </p>
                     </div>
                 </div>
-                <div>
+                <div class="sect-two-div-2-helpers">
                     <img src="/resources/images/icon-api.svg" alt="">
                     <div>
                         <h3>Open API</h3>
-                        <p>
+                        <p class="p-helper">
                             manage your savings, investments, <br>
                             pension, and much more from one <br>
                             account. Tracking your money has <br>
@@ -110,7 +111,7 @@
                     <h3> Receive money in any <br>
                          currency with no fees
                     </h3>
-                    <p>
+                    <p class="p-helper">
                         The world is getting smaller and <br>
                         we're becoming more mobile. So <br>
                         why should forced to only  <br>
@@ -118,10 +119,82 @@
                     </p>
                 </div>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <img src="/resources/images/image-restaurant.jpg" alt="">
+                <div>
+                    <h4>By Wilson Hutton</h4>
+                    <h3>Treat your self <br>
+                        without worrying about money
+                    </h3>
+                    <p class="p-helper">
+                        Our simple budgeting feature <br>
+                        allows you to seperate out your <br>
+                        spending and set realistic limits <br>
+                        each month. that means...
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="/resources/images/image-plane.jpg" alt="">
+                <div>
+                    <h4>By Wilson Hutton</h4>
+                    <h3>
+                        Take your easybank card <br>
+                        wherever you go
+                    </h3>
+                    <p class="p-helper">
+                        We want you to enjoy your travels. <br>
+                        This is why we don't charge any <br>
+                        fees on purchases while you're <br>
+                        abroad. We'll even show you...
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="/resources/images/image-confetti.jpg" alt="">
+                <div>
+                    <h4> By claire Robinson</h4>
+                    <h3> Our invite-only Beta <br>
+                         accounts are now live!
+                    </h3>
+                    <p class="p-helper">
+                        After alot of hard work by the <br>
+                        whole team, we're excited to launch  <br>
+                        our closed beta. it's easy to request <br>
+                        an invite through the site....
+                    </p>
+                </div>
+            </div>
          </section>
+
+         <!-- this the footer  -->
+          <footer>
+            <div>
+                <img src="/resources/images/logo.svg" alt="">
+                <div>
+                    <img src="/resources/images/icon-facebook.svg" alt="facebook logo">
+                    <img src="/resources/images/icon-youtube.svg" alt="youtube logo">
+                    <img src="/resources/images/icon-twitter.svg" alt="twitter logo">
+                    <img src="/resources/images/icon-pinterest.svg" alt="pinterest">
+                    <img src="/resources/images/icon-instagram.svg" alt="instagram">
+
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li>About us</li>
+                    <li>Contact</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Support</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div>
+                <button>Request Invite</button>
+                <p>=&copy;Easybank. All Rights Reserved</p>
+            </div>
+          </footer>
     </section>
 </body>
 </html>

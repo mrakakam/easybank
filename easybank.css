@@ -1,0 +1,123 @@
+*{
+    padding: 0%;
+     margin: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /* primary colors  */
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+
+    /* Neutral  colors  */
+
+--Grayish-Blue: hsl(233, 8%, 62%);
+--Light-Grayish-Blue: hsl(220, 16%, 96%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+--White: hsl(0, 0%, 100%);
+
+       /* Typography */
+
+      --Font-size: 18px;
+
+      /* font-weights */
+      --Weights1: 300;
+      --Weights2: 400;
+      --Weights3: 700;
+
+}
+
+.nav {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    gap: 30px;
+}
+
+#request-invite{
+   
+    border: none;
+    background-image: linear-gradient(to right, #32CD32,#0AFFFF);
+     padding: 5px 15px ;
+    color: var(--White);
+    border-radius: 30px ;
+    font-size:14px;  
+}
+
+
+#section-one{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Very-Light-Gray);
+
+}
+
+.sect-one-div-1{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-left: 150px;
+}
+
+.h1-helper{
+    font-size: 50px;
+    font-weight: var(--Weights2);
+    color: var(--Dark-Blue);
+}
+.p-helper{
+    color: var(--Grayish-Blue);
+    font-weight: var(--Weights2);
+}
+
+.sect-one-div-2{
+    /* border: 2px solid black; */
+   height: 100vh;
+   width: 95vh;
+}
+
+.wrapper{
+    background-image: url(resources/images/bg-intro-desktop.svg);
+    /* width:1440px; */  
+}
+
+#section-two{
+    border: 2px solid black;
+     display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 100px;
+    background-color: var(--Very-Light-Gray);
+}
+
+.sect-two-div-1{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 120px;
+   
+}
+
+.sect-two-div-2-helpers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
