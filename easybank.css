@@ -36,6 +36,7 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 40px;
+    background-color: white;
 }
 
 .list{
@@ -97,6 +98,10 @@
     /* width:1440px; */  
 }
 
+/* .sect-one-div-2 img{
+  
+} */
+
 #section-two{
     border: 2px solid black;
      display: flex;
@@ -104,6 +109,7 @@
     align-items: start;
     gap: 100px;
     background-color: var(--Very-Light-Gray);
+    padding-top: 100px;
 }
 
 .sect-two-div-1{
@@ -115,9 +121,10 @@
    
 }
 
-.sect-two-div-2-helpers{
+.sect-two-div-2{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    
+    gap: 40px;
 }
