@@ -99,7 +99,9 @@
 }
 
 .wrapper{
+   
     background-image: url(resources/images/bg-intro-desktop.svg);
+    clip-path:inset(13% 16% 0% 0%) ;
     /* width:1440px; */  
 }
 
