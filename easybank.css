@@ -255,3 +255,43 @@
     list-style: none;
     
 }
+
+.list li a{
+    /* border: 2px solid black; */
+     color: var(--Dark-Blue);
+  text-decoration: none;
+}
+
+.ul-helper li a:hover{
+    color: var(--Lime-Green);
+    transition: 0.5s;
+}
+
+.ul-helper li a{
+    /* border: 2px solid black; */
+     color: var(--White);
+  text-decoration: none;
+}
+
+
+.bi-facebook, .bi-twitter-x, .bi-instagram, .bi-youtube , .bi-pinterest{
+    font-size: 20px;
+    color: var(--White);
+   color: white;
+}
+
+.bi-facebook, .bi-twitter-x, .bi-instagram, .bi-youtube , .bi-pinterest a{
+    text-decoration: none;
+    color: var(--White);
+   
+}
+.bi-facebook:hover, .bi-twitter-x:hover, .bi-instagram:hover, .bi-youtube:hover , .bi-pinterest:hover{
+    color: var(--Lime-Green);
+    transition: 0.5s;
+}
+
+.h3-helper:hover{
+    cursor: pointer;
+    color: var(--Lime-Green);
+    transition: 0.5s;
+}
