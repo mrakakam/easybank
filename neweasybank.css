@@ -1,0 +1,583 @@
+*{
+    padding: 0%;
+     margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root{
+
+    /* primary colors  */
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+
+    /* Neutral  colors  */
+
+--Grayish-Blue: hsl(233, 8%, 62%);
+--Light-Grayish-Blue: hsl(220, 16%, 96%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+--White: hsl(0, 0%, 100%);
+
+       /* Typography */
+
+      --Font-size: 18px;
+
+      /* font-weights */
+      --Weights1: 300;
+      --Weights2: 400;
+      --Weights3: 700;
+
+}
+
+nav{
+     display: flex;
+    flex-direction:row;
+    align-items: start;
+    justify-content:space-between;
+    padding: 20px 140px 20px 110px;
+    background-color:white;
+    /* z-index: 1; */
+    position: relative;
+    width: 100%;
+   
+}
+
+nav ul{
+    
+    display: flex;
+    list-style: none;
+    gap: 50px;
+
+}
+
+nav ul li{
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--Grayish-Blue);
+}
+
+nav ul li a:hover{
+    color: var(--Dark-Blue);
+}
+
+nav button{
+    background: linear-gradient(to right, #32CD32,#0AFFFF);
+    border: none;
+      padding: 5px 15px ;
+    color: var(--White);
+    border-radius: 30px ;
+    font-size:14px;
+}
+
+.hero-content button{
+     background: linear-gradient(to right, #32CD32,#0AFFFF);
+    border: none;
+      padding: 5px 15px ;
+    color: var(--White);
+    border-radius: 30px ;
+    font-size:14px
+}
+
+.menu-toggle{
+    display: none;
+    cursor: pointer;
+}
+
+.bi-list,
+.bi-x-lg{
+    display: none;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+     background-color: var(--Very-Light-Gray);
+     padding-left: 100px;
+     margin-bottom: 30px;
+    
+}
+
+
+.hero-image,
+.hero-content{
+    width: 100%;
+}
+
+.hero-content{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    padding: 30px 35px;
+    gap: 20px;
+}
+
+.hero-content h1{
+      font-size: 50px;
+    font-weight: var(--Weights2);
+    color: var(--Dark-Blue);
+}
+
+.hero-content p{
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+}
+
+.hero-image{
+      height: 700px;
+    background-image: url(resources/images/bg-intro-desktop.svg);
+    background-size: cover;
+    margin-top: -150px;
+    margin-right: -170px;
+   
+}
+
+.hero-image img{
+     width: 90%;
+    margin: 70px -150px 0 0;    
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-left: 110px;
+     background-color: var(--Very-Light-Gray);
+     padding-top: 50px;
+    padding-bottom: 60px;
+     gap: 50px;
+}
+
+.section2-div1{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+}
+
+.section2-div1 h1{
+    font-size: 40px;
+    font-weight: var(--Weights2);
+    color: var(--Dark-Blue);
+}
+
+.section2-div1 p{
+    font-size: 30px;
+    color: var(--Grayish-Blue);
+}
+
+.section2-div2{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+}
+
+                         /* the subdiv indicate a div inside a div (section subdiv1)  */
+
+.sect2-subdiv1{
+     display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+}
+
+.sect2-subdiv1 img{
+     width: 70px;
+        height: 70px;
+}
+
+.section2-div1 h3{
+    color: var(--Dark-Blue);
+    font-weight: 600;
+}
+
+.section2-div1 p{
+    font-size: small;
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+
+                        /* the subdiv indicate a div inside a div (section subdiv2)    */
+
+.sect2-subdiv2{
+     display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+}
+
+.sect2-subdiv2 img{
+     width: 70px;
+        height: 70px;
+}
+
+.section2-div2 h3{
+    color: var(--Dark-Blue);
+    font-weight: 600;
+}
+
+.section2-div2 p{
+    font-size: small;
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+                        /* the subdiv indicate a div inside a div ( section subdiv3)    */
+
+.sect2-subdiv3{
+     display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+}
+
+.sect2-subdiv3 img{
+     width: 70px;
+        height: 70px;
+}
+
+.section2-div3 h3{
+    color: var(--Dark-Blue);
+    font-weight: 600;
+}
+
+.section2-div3 p{
+    font-size: small;
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+                        /* the subdiv indicate a div inside a div ( section subdiv4)    */
+
+.sect2-subdiv4{
+     display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+}
+
+.sect2-subdiv4 img{
+     width: 70px;
+        height: 70px;
+}
+
+.section2-div4 h3{
+    color: var(--Dark-Blue);
+    font-weight: 600;
+}
+
+.section2-div4 p{
+    font-size: small;
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+
+
+.section3{
+        display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-left: 110px;
+      background-color:whitesmoke;
+     padding: 80px;
+     gap: 40px;
+}
+
+.sect3-div1 h1{
+     font-size: 40px;
+    font-weight: var(--Weights2);
+    color: var(--Dark-Blue);
+}
+
+.sect3-div2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+                         /* the subdiv indicate a div inside a div (sect3 subdiv1)    */
+
+
+.sect3-subdiv1{
+     display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color:white;
+        padding-bottom: 20px;
+       
+}
+
+.sect3-subdiv1 img{
+     width: 250px;
+        height: 150px;
+}
+
+.sect3-subdiv1 h5{
+    color: var(--Grayish-Blue);
+    font-weight: 500;
+    font-size:12px;
+}
+
+.sect3-subdiv1 h3{
+     color: var(--Dark-Blue);
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.sect3-subdiv1 p{
+     color: var(--Grayish-Blue);
+    font-weight:400;
+    font-size: 14px;
+    
+}
+                         /* the subdiv indicate a div inside a div (sect3 subdiv2)    */
+
+
+.sect3-subdiv2{
+     display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color:white;
+         padding-bottom: 20px;
+       
+}
+
+.sect3-subdiv2 img{
+     width: 250px;
+        height: 150px;
+}
+
+.sect3-subdiv2 h5{
+    color: var(--Grayish-Blue);
+    font-weight: 500;
+    font-size:12px;
+}
+
+.sect3-subdiv2 h3{
+     color: var(--Dark-Blue);
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.sect3-subdiv2 p{
+     color: var(--Grayish-Blue);
+    font-weight:400;
+    font-size: 14px;
+    
+}
+                         /* the subdiv indicate a div inside a div (sect3 subdiv3)    */
+
+
+.sect3-subdiv3{
+     display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color:white;
+         padding-bottom: 20px;
+       
+}
+
+.sect3-subdiv3 img{
+     width: 250px;
+        height: 150px;
+}
+
+.sect3-subdiv3 h5{
+    color: var(--Grayish-Blue);
+    font-weight: 500;
+    font-size:12px;
+}
+
+.sect3-subdiv3 h3{
+     color: var(--Dark-Blue);
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.sect3-subdiv3 p{
+     color: var(--Grayish-Blue);
+    font-weight:400;
+    font-size: 14px;
+    
+}
+                         /* the subdiv indicate a div inside a div (sect3 subdiv4)    */
+
+
+.sect3-subdiv4{
+     display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color:white;
+         padding-bottom: 20px;
+       
+}
+
+.sect3-subdiv4 img{
+     width: 250px;
+        height: 150px;
+}
+
+.sect3-subdiv4 h5{
+    color: var(--Grayish-Blue);
+    font-weight: 500;
+    font-size:12px;
+}
+
+.sect3-subdiv4 h3{
+     color: var(--Dark-Blue);
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.sect3-subdiv4 p{
+     color: var(--Grayish-Blue);
+    font-weight:400;
+    font-size: 14px;
+    
+}
+
+                    /* this is my footer */
+
+footer{
+     display: flex;
+    flex-direction:row;
+    align-items: start;
+    justify-content:space-between;
+    background-color: var(--Dark-Blue);
+    padding: 20px 30px 20px 110px;
+}
+
+.footer-div1{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.footer-div1 img{
+    filter: invert();
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+     gap: 20px;
+}
+
+.bi-facebook, .bi-twitter-x, .bi-instagram, .bi-youtube , .bi-pinterest{
+    font-size: 20px;
+    color: var(--White);
+   color: white;
+}
+
+.footer-div2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 120px;
+}
+
+.footer-div2 ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    color: var(--White);
+}
+
+.footer-div2 ul a{
+   color: var(--White);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-div3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-div3 button{
+    background: linear-gradient(to right, #32CD32,#0AFFFF);
+    border: none;
+      padding: 14px 35px ;
+    color: var(--White);
+    border-radius: 30px ;
+    font-size:14px;
+}
+
+.footer-div3 p{
+     color: var(--Light-Grayish-Blue);
+    font-size: 13px;
+   
+}
+
+
+                         /* active states of easy bank */
+
+
+
+                         /* active state for nav bar */
+
+
+
+nav ul li a:hover{
+    color: var(--Dark-Blue);
+}
+
+nav button:hover{
+    cursor: pointer;
+    filter: blur(0.7px);
+}
+
+.hero-content button:hover{
+    cursor: pointer;
+    filter: blur(0.7px);
+}
+
+
+            /* active state for section-three subdiv1-3 */
+
+
+.sect3-subdiv1 h3:hover{
+    cursor: pointer;
+    color: var(--Lime-Green);
+}
+.sect3-subdiv2 h3:hover{
+     cursor: pointer;
+    color: var(--Lime-Green);
+}
+.sect3-subdiv3 h3:hover{
+     cursor: pointer;
+    color: var(--Lime-Green);
+}
+.sect3-subdiv4 h3:hover{
+     cursor: pointer;
+    color: var(--Lime-Green);
+}
+
+                /* active state for footer */
+
+.bi-facebook:hover, .bi-twitter-x:hover, .bi-instagram:hover, .bi-youtube:hover , .bi-pinterest:hover{
+    color: var(--Lime-Green);
+    transition: 0.5s;
+}
+
+.footer-div2 ul a:hover{
+    color: var(--Lime-Green);
+}
+
+.footer-div3 button:hover{
+    cursor: pointer;
+    filter: blur(0.8px);
+}
