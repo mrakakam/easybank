@@ -137,14 +137,17 @@ nav button{
       height: 700px;
     background-image: url(resources/images/bg-intro-desktop.svg);
     background-size: cover;
-    margin-top: -150px;
-    margin-right: -170px;
+    margin-top: -25vh;
+    margin-right: -29vh;
+    
    
 }
 
 .hero-image img{
+   
      width: 90%;
-    margin: 70px -150px 0 0;    
+    margin: 70px -150px 0 0; 
+     
 }
 
 .section2{
@@ -580,4 +583,141 @@ nav button:hover{
 .footer-div3 button:hover{
     cursor: pointer;
     filter: blur(0.8px);
+}
+
+
+            /* responsiveness for easybank */
+
+
+            @media screen and (max-width:480px) {
+
+                nav{
+                    padding: 25px 0 0 15px;
+                }
+
+                nav ul{
+                    display: none;
+                }
+
+                nav button{
+                    display: none;
+                }
+
+                 .menu-toggle{
+                    display: block;
+                    border: 2px solid var(--Dark-Blue);
+                    border-radius: 20px;
+                     padding: 5px 12px;
+                     
+                 }
+
+                 .bi-list{
+                     display: block;
+                     font-size: 24px;
+                     color: var(--Dark-Blue);
+                 }
+
+                 .hero{
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    padding: 0 0 0 0;
+                 }
+                 
+                 .hero-image{
+                    background-image:url(resources/images/bg-intro-mobile.svg) ;
+                    background-size:cover;
+                    width: 120%;
+                    height: 700px;
+                    background-position: center;
+                    margin: -43vh 0 0 10vh;
+                   
+                 }
+
+                 .hero-image img{
+                    display: block;
+                    
+                 }
+
+                 .hero-content{
+                   display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+                    padding: 20px;
+                 }
+
+                 .section2{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0 0 0 20px;
+                    /* justify-content: center; */
+                   
+                 }
+
+                 .section2-div1 h1{
+                    text-align: center;
+                 }
+
+                 .section2-div2{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                 }
+
+               
+
+                 .sect2-subdiv1, .sect2-subdiv2, .sect2-subdiv3, .sect2-subdiv4{
+                    display: flex;
+                   flex-direction: column;
+                   align-items: center;
+                 }
+
+                  .sect2-subdiv1 p, .sect2-subdiv2 p, .sect2-subdiv3 p, .sect2-subdiv4 p {
+                  text-align:start;
+
+                  }
+
+                  .section3{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                  }
+
+                  .sect3-div2{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                  }
+
+                  footer{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 15px 70px 30px 70px;
+                    gap: 20px;
+                  }
+
+                  .footer-div1{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                  }
+
+                  .footer-div2{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 5px;
+                   
+                  }
+
+                  .footer-div3{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                  }
+
 }
