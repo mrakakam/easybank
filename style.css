@@ -185,6 +185,10 @@ nav button{
     gap: 90px;
 }
 
+.section2-div2  br{
+    display: inline;
+}
+
                          /* the subdiv indicate a div inside a div (section subdiv1)  */
 
 .sect2-subdiv1{
@@ -305,6 +309,10 @@ nav button{
     display: flex;
     flex-direction: row;
     gap: 30px;
+}
+
+.sect3-div2 br{
+    display: inline;
 }
 
 
@@ -663,6 +671,11 @@ nav button:hover{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    width: 100%;
+                 }
+
+                 .section2-div2 br{
+                    display: none;
                  }
 
                
@@ -671,17 +684,23 @@ nav button:hover{
                     display: flex;
                    flex-direction: column;
                    align-items: center;
+                   width: 100%;
                  }
 
                   .sect2-subdiv1 p, .sect2-subdiv2 p, .sect2-subdiv3 p, .sect2-subdiv4 p {
-                  text-align:start;
-
+                  text-align: center;
+                  width: 90%;
+                  font-size: medium;
                   }
 
                   .section3{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                  }
+
+                  .sect3-div2 br{
+                    display: none;
                   }
 
                   .sect3-div2{
