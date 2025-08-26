@@ -598,6 +598,12 @@ nav button:hover{
 
             @media screen and (max-width:480px) {
 
+
+                body{
+                    overflow-x: hidden;
+                    width: 100%;
+
+                }
                 nav{
                     padding: 25px 0 0 15px;
                 }
@@ -652,6 +658,7 @@ nav button:hover{
                     flex-direction: column-reverse;
                     align-items: center;
                     padding: 0 0 0 0;
+                    overflow-x: hidden;
                  }
                  
                  .hero-image{
@@ -662,6 +669,7 @@ nav button:hover{
                     height: 550px;
                     background-position: center;
                     margin: -0px -220px 50px 0px;
+                    
                    
                  }
 
